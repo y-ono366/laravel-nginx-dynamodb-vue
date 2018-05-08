@@ -16,12 +16,9 @@ services:
     volumes:
       - ./app:/var/www/html/app
 
-  mysql:
-    image: mysql
-    container_name: "laravel-mysql"
+  dynamodb:
+    build: ./dynamodb
+    container_name: "laravel-dynamodb"
     restart: always
-    environment:
-      MYSQL_DATABASE: root
-      MYSQL_ROOT_PASSWORD: root
     ports: 
-      - 13306:3306
+      - 8080:8000
