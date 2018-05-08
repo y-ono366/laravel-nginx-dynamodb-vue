@@ -12,12 +12,14 @@ services:
 
   php:
     build: ./php
+    image: laravel
     container_name: "laravel-php"
     volumes:
       - ./app:/var/www/html/app
 
   dynamodb:
     build: ./dynamodb
+    image: dynamodb
     container_name: "laravel-dynamodb"
     restart: always
     ports: 
