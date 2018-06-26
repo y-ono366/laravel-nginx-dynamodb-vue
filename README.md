@@ -1,4 +1,4 @@
-# docker-compose php nginx dynamodb vue.js
+# laravel nginx dynamodb vue.js
 
 ### build
 $ cd php_nginx_dynamodb_vue/
